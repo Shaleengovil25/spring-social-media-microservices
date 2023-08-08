@@ -1,0 +1,14 @@
+spring:
+  config:
+    import: configserver:http://localhost:8888
+  application:
+    name: eureka-server
+# eureka:
+#   client:
+#     fetch-registry: 'false'
+#     register-with-eureka: 'false'
+#   server:
+#     eviction-interval-timer-in-ms: '60000'
+#     enable-self-preservation: 'false'
+# server:
+#   port: 8888

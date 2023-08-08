@@ -1,0 +1,17 @@
+spring:
+  config:
+    import: configserver:http://localhost:8888
+  application:
+    name: posts-service
+  profiles:
+    active: dev
+# management:
+#   endpoint:
+#     health:
+#       show-details: always
+# server:
+#   port: '8082'
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://localhost:8888/eureka/

@@ -1,0 +1,15 @@
+spring:
+  config:
+    import: configserver:http://localhost:8888
+  application:
+    name: users-service
+  profiles:
+    active: default
+# management:
+#   endpoint:
+#     health:
+#       show-details: always
+# eureka:
+#   client:
+#     serviceUrl:
+#       defaultZone: http://localhost:8888/eureka/
